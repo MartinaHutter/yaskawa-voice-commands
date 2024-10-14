@@ -3,6 +3,14 @@ Application offers an easy voice commands interface to YASKAWA robots.
 This application is created for [YASKAWA Robots](https://www.yaskawa.eu.com/), specifically for [YRC1000 generation](https://www.yaskawa.eu.com/products/robots/controller/productdetail/product/yrc1000_583) (it can be also used with YRC1000micro, DX200, FS100 and DX100, however on those platforms, it was not tested).
 For communication with a robot, it uses Ycom interface. As a speech recognizer, [Google Speech Recognition](https://cloud.google.com/speech-to-text) was used and sentence transformer model [all-MiniML](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) by Hugging Face was used for clustering or semantic search in sentences spoken to the robot as voice commands.
 
+### List of Required Packages:
+* transformers
+* speechrecognition
+* torch
+* numpy
+* scikit-learn
+* [ycom](https://github.com/YaskawaEurope/ycom-python)
+
 ## HW Architecture
 All code runns on laptop or PC connected to the the robot controller YRC1000 via High Speed Ethernet function (needs to be enabled, YASKAWA Europe enables HSE at the initialization). Establish LAN connection (connect to the LAN2 or LAN3 port on the switch inside the robot controller and set up IP address of the controller and laptop). More details are in [this instruction video](https://www.youtube.com/watch?v=k1dJzDm8Ees).
 
