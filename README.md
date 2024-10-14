@@ -4,6 +4,7 @@ This application is created for [YASKAWA Robots](https://www.yaskawa.eu.com/), s
 For communication with a robot, it uses Ycom interface. As a speech recognizer, [Google Speech Recognition](https://cloud.google.com/speech-to-text) was used and sentence transformer model [all-MiniML](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) by Hugging Face was used for clustering or semantic search in sentences spoken to the robot as voice commands.
 
 ### List of Required Packages:
+* python>=3.10 
 * transformers
 * speechrecognition
 * torch
